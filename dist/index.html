@@ -4,67 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <title>Leaderboard</title>
   <script defer src="main.js"></script></head>
   <body>
-    <header class="top-header">
+    <header class="header">
       <h1>Leaderboard</h1>
     </header>
     <div class="container">
-      <section class="scores-list">
+      <section class="recent-scores">
         <div class="scores-header">
-          <h3>Recent scores</h3>
-          <button class="refresh-btn">Refresh</button>
+          <h2>Recent scores</h2>
+          <button type="submit" class="refresh">Refresh</button>
         </div>
-        <table class="table">
-          <tr>
-            <td class="name">
-              Name: <span class="score">100</span>
-            </td>
-          </tr>
-          <tr>
-            <td class="name">
-              Name: <span class="score">20</span>
-            </td>
-          </tr>
-          <tr>
-            <td class="name">
-              Name: <span class="score">50</span>
-            </td>
-          </tr>
-          <tr>
-            <td class="name">
-              Name: <span class="score">78</span>
-            </td>
-          </tr>
-          <tr>
-            <td class="name">
-              Name: <span class="score">12.5</span>
-            </td>
-          </tr>
-          <tr>
-            <td class="name">
-              Name: <span class="score">77</span>
-            </td>
-          </tr>
-          <tr>
-            <td class="name">
-              Name: <span class="score">42</span>
-            </td>
-          </tr>
-        </table>
+        <ul class="score-chart">
+          <li class="name">Rachel: <span>600</span></li>
+          <li class="name">Dylan: <span>760</span></li>
+          <li class="name">Michael: <span>720</span></li>
+          <li class="name">Hannah: <span>630</span></li>
+          <li class="name">Max: <span>590</span></li>
+          <li class="name">Felix: <span>550</span></li>
+          <li class="name">Chris: <span>480</span></li>
+        </ul>
       </section>
       <section class="add-score">
-        <div class="scores-header">
-          <h3>Add your score</h3>
+        <div>
+          <h2>Add your score</h2>
         </div>
-        <div class="input-container">
-          <input type="text" placeholder="Your name">
-          <input type="text" placeholder="Your score">
-          <button class="submit-btn">Submit</button>
+        <div class="user-input">
+          <input type="text" placeholder="Your name" />
+          <input type="text" placeholder="Your score" />
+          <button type="submit" class="submit">Submit</button>
         </div>
       </section>
+    </div>
     <script src="./main.js"></script>
   </body>
 </html>
