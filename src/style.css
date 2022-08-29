@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  margin: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  height: 70vh;
+  margin: 20px auto;
+  box-sizing: border-box;
+}
+
+.recent-scores,
+.add-score {
+  margin-top: 2rem;
+  width: 50%;
+}
+
+.recent-scores {
+  margin-left: 6rem;
+}
+
+.scores-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.refresh {
+  padding: 5px 10px;
+  border: 1px solid #000;
+  border-radius: 30px;
+}
+
+.score-chart {
+  margin-top: 1rem;
+  list-style: none;
+  border: 1.5px solid #000;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.score-chart li {
+  padding: 10px 15px;
+}
+
+.score-chart li:nth-child(even) {
+  background-color: #e4e4e4;
+  border-radius: 10px;
+}
+
+.user-input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  width: 60%;
+}
+
+.user-input input {
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border: 1px solid #000;
+  border-radius: 30px;
+}
+
+.submit {
+  align-self: flex-end;
+  padding: 5px 10px;
+  border: 1px solid #000;
+  border-radius: 30px;
+  width: auto;
+}
