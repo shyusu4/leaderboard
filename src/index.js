@@ -1,5 +1,5 @@
 import { addScore, displayScore } from './modules/api';
-import './style.css';
+import './style.scss';
 
 const refreshBtn = document.querySelector('.refresh');
 const submitBtn = document.querySelector('.submit');

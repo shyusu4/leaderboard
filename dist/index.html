@@ -7,28 +7,28 @@
     <title>Leaderboard</title>
   <script defer src="main.js"></script></head>
   <body>
-    <header class="header">
-      <h1>Leaderboard</h1>
-    </header>
-    <div class="container">
-      <section class="recent-scores">
-        <div class="scores-header">
-          <h2>Recent scores</h2>
-          <button type="submit" class="refresh">Refresh</button>
-        </div>
-        <ul class="score-chart"></ul>
-      </section>
-      <section class="add-score">
-        <div>
+    <main>
+      <header class="header">
+        <h1>Leaderboard🎮</h1>
+      </header>
+      <div class="container">
+        <section class="recent-scores">
+          <div class="scores-header">
+            <h2>Recent scores</h2>
+            <button type="submit" class="refresh">Refresh</button>
+          </div>
+          <ul class="score-chart"></ul>
+        </section>
+        <form class="add-score">
           <h2>Add your score</h2>
-        </div>
-        <div class="user-input">
-          <input type="text" placeholder="Your name" class="name-input" />
-          <input type="text" placeholder="Your score" class="score-input" />
-          <button type="submit" class="submit">Submit</button>
-        </div>
-      </section>
-    </div>
+          <div class="user-input">
+            <input type="text" placeholder="Your name" class="name-input" />
+            <input type="text" placeholder="Your score" class="score-input" />
+            <button type="submit" class="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </main>
     <script src="./main.js"></script>
   </body>
 </html>
