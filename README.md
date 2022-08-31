@@ -4,7 +4,7 @@
 
 ## Live Demo
 
-[Live]()
+[Live](https://shyusu4.github.io/Leaderboard/dist/)
 
 ## Built with
 
