@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$color: #073a4c;
+$radius: 0.35rem;
+$border-width: 2.5px;
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e1e5f2;
+}
+
+button {
+  font-weight: 600;
+  border: solid $border-width $color;
+  color: $color;
+  outline: 0;
+  padding: 8px 10px;
+  font-size: 15px;
+  letter-spacing: 0.05rem;
+  background-color: white;
+  border-radius: $radius;
+  position: relative;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $color;
+    z-index: -1;
+    border-radius: $radius;
+    border: solid $border-width $color;
+    transition: all 0.4s ease-in-out;
+    width: 90%;
+    height: 0%;
+  }
+
+  &:hover {
+    &::after {
+      width: 98%;
+      height: 94%;
+      top: 0.5rem;
+      left: 0.5rem;
+    }
+  }
+}
+
+.submit {
+  align-self: flex-end;
+  width: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: 'Days One', sans-serif;
+  color: $color;
+  margin: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.container {
+  display: flex;
+  color: $color;
+  width: 90%;
+  height: 70vh;
+  margin: 20px auto;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.recent-scores,
+.add-score {
+  margin-top: 2rem;
+  width: 50%;
+}
+
+.recent-scores {
+  margin-left: 6rem;
+}
+
+.scores-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.score-chart {
+  margin-top: 1rem;
+  list-style: none;
+  border: $border-width solid $color;
+  background-color: white;
+  border-radius: $radius;
+  width: 80%;
+  height: 50%;
+  overflow: auto;
+}
+
+.score-chart li {
+  padding: 10px 15px;
+}
+
+.score {
+  font-weight: bold;
+}
+
+.user-input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  width: 60%;
+}
+
+.user-input input {
+  margin-bottom: 10px;
+  padding: 15px 20px;
+  font-size: 18px;
+  border: $border-width solid $color;
+  border-radius: $radius;
+}
+
+@media only screen and (max-width: 769px) {
+  button {
+    padding: 5px 8px;
+  }
+
+  .header {
+    font-size: 1rem;
+    justify-content: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3rem;
+    height: 100%;
+  }
+
+  .recent-scores {
+    margin-left: 0;
+    width: 100%;
+    height: 70%;
+  }
+
+  .add-score {
+    width: 100%;
+    margin-left: 3rem;
+    align-items: center;
+    justify-content: center;
+  }
+}

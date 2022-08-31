@@ -27,7 +27,7 @@ const displayScore = () => {
   getScore().then((result) => {
     scoreChart.innerHTML = '';
     result.result.forEach((data) => {
-      scoreChart.innerHTML += `<li><span>${data.user}</span>: <span>${data.score}</span></li>`;
+      scoreChart.innerHTML += `<li><span class="user">${data.user}</span>: <span class="score">${data.score}</span></li>`;
       return result;
     });
   });
