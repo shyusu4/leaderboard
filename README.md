@@ -2,6 +2,10 @@
 # Leaderboard
 > A leaderboard website that displays scores submitted by users. All data is preserved using an external API service.
 
+## Preview
+
+![Website preview](./mockup.png)
+
 ## Live Demo
 
 [Live](https://shyusu4.github.io/Leaderboard/dist/)
@@ -12,7 +16,6 @@
 - JavaScript
 - Webpack
 - Leaderboard API
-- npm
 
 ## Getting Started
 
@@ -29,7 +32,7 @@
 
 - GitHub: [@shyusu4](https://github.com/shyusu4)
 - Twitter: [@shyusu4](https://twitter.com/shyusu4)
-- LinkedIn: [Shakhrizoda Yusupova](https://www.linkedin.com/in/shakhrizoda-yusupova-789253229/?originalSubdomain=uz)
+- LinkedIn: [Shakhrizoda Yusupova](https://www.linkedin.com/in/shyusu4/)
 
 ## 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
@@ -41,8 +44,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-Microverse
+- Microverse
+- [Leaderboard API service](https://www.notion.so/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3)
 
 ## 📝 License
 
-This project is [MIT](https://github.com/shyusu4/Leaderboard/blob/basic-structure/MIT.md) licensed.
+This project is [MIT](https://github.com/shyusu4/Leaderboard/blob/dev/MIT.md) licensed.
